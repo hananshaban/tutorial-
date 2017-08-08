@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Members Recruitment</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../../favicon.ico">
+	<link href="http://fonts.googleapis.com/css?family=Economica:700,400italic" rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.dafont.com/snowboarding.font">
+	<link rel="shortcut icon" href="../../WebsiteAssets/icons/lo.ico">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+
+<body>
+
+	<div class="nav_bar">
+        <a href="../../index.html"> <img src="../../nav/icons/logo.png" alt="EngBreak" class="home"> </a>
+	</div>
+
+
+    <div class="form-div" id="form-div">
+        <form id="RForm" class="form" method="post" action="form.php" onsubmit="return checkForm();">
+
+            <h2> Registration </h2>
+            <p class="name">
+                 <input  style="border-color : #fff; " name="name" type="text" class="feedback-input" placeholder="Name" id="name" required />
+            </p>
+
+            <p class="Phone Number">
+                <input style="border-color : #fff; " name="number" type="text" class="feedback-input" id="phonenumber" placeholder="Phone Number" required/>
+            </p>
+
+            <p class="email">
+                <input style="border-color : #fff; " name="email" type="email" class="feedback-input" id="email" placeholder="Email" required/>
+            </p>
+
+            <p class="faculty">
+                <input  style="border-color : #fff; " name="faculty" type="text" class="feedback-input" id="faculty" placeholder="Faculty" required />
+            </p>
+
+            <p class="university">
+                <input  style="border-color : #fff; " name="university" type="text" class="feedback-input" id="university" placeholder="University" required/>
+            </p>
+             <p class="Facebook">
+                <input  style="border-color : #fff; " name="FaceBooklink" type="text" class="feedback-input" id="Facebook" placeholder="Facebook link" required/>
+            </p>
+
+            <p>
+                <select name="academicYear"  class="feedback-input" required style="border-color : #fff; padding-left: 15px;" id="academicYear">
+                    <option value="" disabled selected style="display: none; " class="feedback-input" >Academic Year</option>
+                    <option value="Preparatory" class="feedback-input">Preparatory</option>
+                    <option value="First" class="feedback-input">First</option>
+                    <option value="Second" class="feedback-input">Second</option>
+                    <option value="Third" class="feedback-input">Third</option>
+                    <option value="Fourth" class="feedback-input">Fourth</option>
+                    </select>
+             </p>
+            <p>
+                <select name="RequiredPosition"  class="feedback-input" required style="border-color : #fff; padding-left: 15px;" id="Position">
+                	<option value="" disabled selected style="display: none; " class="feedback-input" >First Preference</option>
+                    <option value="Marketing" class="feedback-input">Marketing  Committee</option>
+                    <option value="Logistics" class="feedback-input">Logistics Committee</option>
+                    <option value="Public Relations" class="feedback-input">Public Relations Committee</option>
+                    <option value="Fundraising" class="feedback-input">Fundraising Committee</option>
+                    <option value="Information Technology" class="feedback-input">Information Technology Committee</option>
+                    <option value="Media" class="feedback-input">Media Committee</option>
+                    <option value="Publications" class="feedback-input">Publications Committee</option>
+                    <option value="Human Resources" class="feedback-input">Human Resources Committee</option>
+                    <option value="Training and Internal Branding" class="feedback-input">Training & Internal Branding Committee</option>
+
+                    <option value="Decoration and Reception" class="feedback-input">Decoration & Reception Committee</option>
+                    <option value="Engineering   Arduino Workshop" class="feedback-input">Engineering Committee - Arduino Workshop</option>
+                    <option value="Engineering Committee - Web Design Workshop" class="feedback-input">Engineering Committee - Web Design Workshop
+                    </option>
+                    <option value="Management" class="feedback-input">Management Committee  - Workshops will be discussed later</option>
+                    <option value="Designing Committee - Photoshop Workshop" class="feedback-input">Designing Committee - Photoshop Workshop</option>
+                     <option value="Designing Committee - Illustrator Workshop" class="feedback-input">Designing Committee - Illustrator Workshop</option>
+                    <option value="Presenting Committee - Public Speaking Workshop" class="feedback-input">Presenting Committee - Public Speaking Workshop
+                    </option>
+                    <option value="Presenting Committee - Video Production Workshop" class="feedback-input">Presenting Committee - Video Production Workshop
+                    </option>
+                </select>
+            </p>
+            <p>
+                <select name="SecondPosition"  class="feedback-input" required style="border-color : #fff; padding-left: 15px;" id="SecondPosition">
+                    <option value="" disabled selected style="display: none; " class="feedback-input" >Second Preference</option>
+                    <option value="Marketing" class="feedback-input">Marketing  Committee</option>
+                    <option value="Logistics" class="feedback-input">Logistics Committee</option>
+                    <option value="Public Relations" class="feedback-input">Public Relations Committee</option>
+                    <option value="Fundraising" class="feedback-input">Fundraising Committee</option>
+                    <option value="Information Technology" class="feedback-input">Information Technology Committee</option>
+                    <option value="Media" class="feedback-input">Media Committee</option>
+                    <option value="Publications" class="feedback-input">Publications Committee</option>
+                    <option value="Human Resources" class="feedback-input">Human Resources Committee</option>
+                    <option value="Training and Internal Branding" class="feedback-input">Training & Internal Branding Committee</option>
+
+                    <option value="Decoration and Reception" class="feedback-input">Decoration & Reception Committee</option>
+                    <option value="Engineering   Arduino Workshop" class="feedback-input">Engineering Committee - Arduino Workshop</option>
+                    <option value="Engineering Committee - Web Design Workshop" class="feedback-input">Engineering Committee - Web Design Workshop
+                    </option>
+                    <option value="Management" class="feedback-input">Management Committee   - Workshops will be discussed later</option>
+                    <option value="Designing Committee - Photoshop Workshop" class="feedback-input">Designing Committee - Photoshop Workshop</option>
+                     <option value="Designing Committee - Illustrator Workshop" class="feedback-input">Designing Committee - Illustrator Workshop</option>
+                    <option value="Presenting Committee - Public Speaking Workshop" class="feedback-input">Presenting Committee - Public Speaking Workshop
+                    </option>
+                    <option value="Presenting Committee - Video Production Workshop" class="feedback-input">Presenting Committee - Video Production Workshop
+                    </option>
+                </select>
+            </p>
+
+
+            <p class="text">
+                <textarea style="border-color : #fff; " name="reasonsForApplying" class="feedback-input" id="reasonsForApplying" placeholder="Reasons for Applying" required></textarea>
+            </p>
+
+            <p class="text">
+                <textarea  style="border-color : #fff; " name="PreviousExperience" class="feedback-input" id="Previous_Experience"
+                placeholder="Previous Experience
+Kindly mention all your past experience inside and outside Eng Break.
+This may include (professional work, trainings, extracurricular activities... etc.)
+                " required></textarea>
+            </p>
+
+            <div class="submit">
+                <input type="submit" value="SUBMIT" name="SUBMIT" id="button-blue"/>
+            </div>
+
+
+
+         </form>
+
+    </div>
+
+	<!-- Scripts -->
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../nav/js/nav.js"></script>
+	<script src="../../jsConnection/connectionjs.js"></script>
+	<script src="js/header.js"></script>
+</body>
+
+</html>

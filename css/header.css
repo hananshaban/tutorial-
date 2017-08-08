@@ -1,0 +1,165 @@
+@font-face {
+    src: url('fonts/Snowboarding.ttf');
+    font-family: 'Snowboarding';
+    font-style: normal;
+    font-weight: 400;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    box-sizing: border-box;
+    margin:0;padding:0;
+}
+
+.nav_bar {
+    height: 80vh;
+    background-image: url("1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.nav_bar a img{
+    height: 53px;
+    width: auto;
+    margin: 20px 30px;
+}
+
+img{
+    height: 50%;
+    width: 100%;
+}
+header {
+    position: relative;
+}
+header > img {
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    left: 18%;
+}
+header div {
+    position: absolute;
+    top: 39%;
+    right: 18%;
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+}
+header div h1 {
+    color: #ffffff;
+    font-family: Snowboarding;
+    font-weight: lighter;
+    font-size: 100px;
+    line-height: 56px;
+    font-style: italic;
+}
+header div h2 {
+    color: #ffc80a;
+
+    font-family: 'Montserrat', 'regular';
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 45px;
+    display: inline-block;
+    font-size: 20px;
+}
+header div h2:hover {
+    color: #fff;
+}
+header div h2 img {
+    height: 100%;
+    margin-left: 5px;
+}
+.form-div {
+    background-color: #fff;
+}
+.feedback-input {
+    background-color: #e3e8ee;
+    color: black;
+    width: 700px;
+    margin: 15px auto 0;
+    border: 2px solid;
+    border-radius: 10px;
+    font-family: 'Montserrat', 'regular';
+    padding: 15px 0;
+    display: block;
+}
+.feedback-input[placeholder] {
+    padding-left: 15px;
+}
+textarea {
+    height: 120px;
+    line-height: 150%;
+    resize: vertical;
+}
+.form-div .form h2 {
+    color: #00a0dc;
+    text-align: center;
+    font-family: 'Montserrat', 'regular';
+    padding-top: 30px;
+    padding-bottom: 15px
+}
+.submit {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px
+}
+.submit input:hover {
+    cursor: pointer;
+
+    background-color:  #005f90;
+}
+#button-blue {
+    font-family: 'Montserrat', 'regular';
+    background-color: #00a0dc;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 115px;
+    font-size: 22px;
+    color: #fff;
+}
+textarea:focus,
+input:focus,
+select:focus {
+    color: #249b9f;
+}
+@media screen and (max-width: 999px) {
+    .feedback-input {
+        width: 640px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .feedback-input {
+        width: 610px;
+    }
+}
+@media screen and (max-width: 881px) {
+    .feedback-input {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 872px) {
+    .feedback-input {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #header div {
+        margin-top: -10px;
+    }
+    #header {
+        margin-left: -70px;
+    }
+    .form input,
+    .form select,
+    .form textarea {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 367px) {
+    #header {
+        margin-left: -50px;
+    }
+}
